@@ -1,0 +1,4 @@
+Note: I performed this lab in my existing DevOpsLabs repository (same repository used for labs) instead of creating a new repository folder. Because of that, the `git init` and initial `untracked README.md` state were not captured as a fresh repo screenshot. However, the required Git workflow steps (`git add`, `git commit`, `git status`, and `git log`) are shown for the README file, including two commits.
+
+p.s 
+also deleted wrong pictures 
