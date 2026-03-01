@@ -1,0 +1,42 @@
+[2026-03-01_20:03:44] common.sh initialized from mahammad
+[2026-03-01_20:37:36] Matched files: 0 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_20:43:38] Matched files: 0 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_21:06:31] Matched files: 0 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_21:08:10] Matched files: 0 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_21:16:58] Matched files: 5 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_21:16:58] Created archive: /home/mahammad/lab7-outputs/archive-20260301-211658.tgz
+[2026-03-01_21:28:10] proc pid=1404 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:10] proc pid=1446 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:10] proc pid=1464 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:10] proc pid=1470 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:28:11] proc pid=1404 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:11] proc pid=1446 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:11] proc pid=1464 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:11] proc pid=1486 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:28:12] proc pid=1404 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:12] proc pid=1446 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:12] proc pid=1464 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:28:12] proc pid=1502 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:29:47] proc pid=1464 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:29:47] proc pid=1527 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:29:47] proc pid=1533 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:29:48] proc pid=1464 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:29:48] proc pid=1527 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:29:48] proc pid=1546 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:29:49] proc pid=1464 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:29:49] proc pid=1527 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:29:49] proc pid=1559 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:33:48] proc pid=1576 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:33:48] proc pid=1582 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:33:49] proc pid=1576 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:33:49] proc pid=1592 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:33:50] proc pid=1576 cpu=0.0% rss=2MB cmd=sleep 120
+[2026-03-01_21:33:50] proc pid=1602 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:39:20] Matched files: 5 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_21:39:20] Created archive: /home/mahammad/lab7-outputs/archive-20260301-213920.tgz
+[2026-03-01_21:42:52] Backup created and verified: /home/mahammad/lab7-outputs/lab7-20260301-214252.tgz
+[2026-03-01_21:58:15] Matched files: 5 (dir=/home/mahammad/lab7/demo pattern=*.log older_than=0)
+[2026-03-01_21:58:15] Created archive: /home/mahammad/lab7-outputs/archive-20260301-215815.tgz
+[2026-03-01_21:58:15] proc pid=1758 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:58:16] proc pid=1765 cpu=0.0% rss=4MB cmd=awk -v pat=sleep NR>1 { cmd=""; for(i=11;i<=NF;i++) cmd=cmd" "$i; if(cmd ~ pat && cmd !~ /proc_watch\.sh/) printf "%s %s %s %s\n",$2,$3,$6,cmd }
+[2026-03-01_21:58:17] Backup created and verified: /home/mahammad/lab7-outputs/lab7-20260301-215817.tgz

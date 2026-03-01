@@ -1,0 +1,4 @@
+30 2 * * * /home/mahammad/lab7/scripts/backup.sh --source /home/mahammad/lab7 --dest /home/mahammad/lab7-outputs --name lab7 --retention 7 >> /home/mahammad/lab7-outputs/backup.log 2>&1
+0 * * * * /home/mahammad/lab7/scripts/log_parse.sh --file /var/log/syslog --type syslog --out /home/mahammad/lab7-outputs >> /home/mahammad/lab7-outputs/logparse.log 2>&1
+30 2 * * * /home/mahammad/lab7/scripts/backup.sh --source /home/mahammad/lab7 --dest /home/mahammad/lab7-outputs --name lab7 --retention 7 >> /home/mahammad/lab7-outputs/backup.log 2>&1
+0 * * * * /home/mahammad/lab7/scripts/log_parse.sh --file /var/log/syslog --type syslog --out /home/mahammad/lab7-outputs >> /home/mahammad/lab7-outputs/logparse.log 2>&1
