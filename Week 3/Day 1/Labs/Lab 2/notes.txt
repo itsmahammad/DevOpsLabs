@@ -1,0 +1,1 @@
+First i tried to deploy my .net apps but faced some issues like need to configure containers and migrate database(will do them after we will cover docker lesson) so i forked node app that was on instruction but in that repo test scripts were missing so i added them by myself and committed in my fork then deployed to web now everything works!
