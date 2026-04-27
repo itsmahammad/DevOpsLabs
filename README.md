@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://www.ironhack.com/static/images/ironhack-logo.svg" width="220"/>
+<img src="[https://www.ironhack.com/static/images/ironhack-logo.svg](https://www.datocms-assets.com/14946/1669282262-global.png?auto=format&fit=max&h=420&q=45)" width="220"/>
 
 # DevOps Labs
 
