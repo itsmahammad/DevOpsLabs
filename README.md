@@ -1,12 +1,10 @@
 <div align="center">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ironhack_logo.svg/2560px-Ironhack_logo.svg.png" width="220"/>
+<img src="https://www.ironhack.com/static/images/ironhack-logo.svg" width="220"/>
 
 # DevOps Labs
 
-Hands-on DevOps labs and infrastructure exercises completed during the **Ironhack DevOps Engineering Program**.
-
-This repository documents practical work across cloud infrastructure, automation, CI/CD, containerization, and system administration.
+Hands-on DevOps labs completed during the **Ironhack DevOps Engineering Program**.
 
 </div>
 
@@ -43,19 +41,3 @@ Topics include:
 - Bash
 - Kubernetes *(upcoming)*
 - Monitoring tools *(upcoming)*
-
----
-
-## Repository Structure
-
-```bash
-devops-labs/
-│
-├── linux/
-├── networking/
-├── docker/
-├── ci-cd/
-├── terraform/
-├── azure/
-├── ansible/
-└── monitoring/
