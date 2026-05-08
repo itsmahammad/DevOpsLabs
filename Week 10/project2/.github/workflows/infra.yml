@@ -1,0 +1,39 @@
+name: Infrastructure CI
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "infra/terraform/**"
+      - ".github/workflows/infra.yml"
+
+jobs:
+  terraform:
+    runs-on: self-hosted
+
+    defaults:
+      run:
+        working-directory: infra/terraform
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Terraform version
+        run: terraform version
+
+      - name: Terraform fmt
+        run: terraform fmt -check -recursive
+
+      - name: Terraform init
+        run: terraform init
+
+      - name: Restore App Gateway certificate
+        run: |
+          echo "${{ secrets.APPGW_CERT_PFX_BASE64 }}" | base64 -d > modules/app-gateway/cert.pfx
+
+      - name: Terraform validate
+        run: terraform validate
+
+      - name: Terraform plan
+        run: terraform plan

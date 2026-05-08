@@ -1,0 +1,43 @@
+name: Backend CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "apps/backend/**"
+      - ".github/workflows/backend.yml"
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Build backend
+        run: |
+          cd apps/backend
+          mvn clean package -DskipTests
+
+      - name: SonarQube scan
+        run: |
+          cd apps/backend
+          mvn sonar:sonar \
+            -Dsonar.projectKey=casp-linkguardian-backend \
+            -Dsonar.projectName="CASP LinkGuardian Backend" \
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+
+      - name: Deploy backend with Ansible
+        run: |
+          cd /home/azureuser/config/ansible
+          ansible-playbook playbooks/deploy-backend.yml \
+            -i inventories/dev/hosts.yml \
+            --extra-vars "artifact_path=${GITHUB_WORKSPACE}/apps/backend/target/backend-0.0.1-SNAPSHOT.jar"

@@ -1,0 +1,272 @@
+{
+  "backendAddressPools": [
+    {
+      "backendAddresses": [
+        {
+          "ipAddress": "10.10.3.100"
+        }
+      ],
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendAddressPools/pool-backend-ilb",
+      "name": "pool-backend-ilb",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/backendAddressPools"
+    },
+    {
+      "backendAddresses": [
+        {
+          "ipAddress": "10.10.2.100"
+        }
+      ],
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendAddressPools/pool-frontend-ilb",
+      "name": "pool-frontend-ilb",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/backendAddressPools"
+    }
+  ],
+  "backendHttpSettingsCollection": [
+    {
+      "cookieBasedAffinity": "Disabled",
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendHttpSettingsCollection/settings-frontend-http",
+      "name": "settings-frontend-http",
+      "path": "",
+      "pickHostNameFromBackendAddress": false,
+      "port": 80,
+      "probe": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/probes/probe-frontend",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "requestTimeout": 30,
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/backendHttpSettingsCollection"
+    },
+    {
+      "cookieBasedAffinity": "Disabled",
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendHttpSettingsCollection/settings-backend-http",
+      "name": "settings-backend-http",
+      "path": "",
+      "pickHostNameFromBackendAddress": false,
+      "port": 8080,
+      "probe": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/probes/probe-backend",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "requestTimeout": 30,
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/backendHttpSettingsCollection"
+    }
+  ],
+  "backendSettingsCollection": [],
+  "customErrorConfigurations": [],
+  "defaultPredefinedSslPolicy": "AppGwSslPolicy20220101",
+  "enableHttp2": false,
+  "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+  "firewallPolicy": {
+    "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/waf-casp-dev",
+    "resourceGroup": "rg-casp-dev"
+  },
+  "frontendIPConfigurations": [
+    {
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/frontendIPConfigurations/appgw-public-frontend-ip",
+      "name": "appgw-public-frontend-ip",
+      "privateIPAllocationMethod": "Dynamic",
+      "provisioningState": "Succeeded",
+      "publicIPAddress": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/publicIPAddresses/pip-casp-appgw-dev",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/frontendIPConfigurations"
+    }
+  ],
+  "frontendPorts": [
+    {
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/frontendPorts/port-http",
+      "name": "port-http",
+      "port": 80,
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/frontendPorts"
+    }
+  ],
+  "gatewayIPConfigurations": [
+    {
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/gatewayIPConfigurations/appgw-ip-config",
+      "name": "appgw-ip-config",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "subnet": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/virtualNetworks/vnet-casp-dev/subnets/snet-appgw",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "type": "Microsoft.Network/applicationGateways/gatewayIPConfigurations"
+    }
+  ],
+  "httpListeners": [
+    {
+      "customErrorConfigurations": [],
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "frontendIPConfiguration": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/frontendIPConfigurations/appgw-public-frontend-ip",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "frontendPort": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/frontendPorts/port-http",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "hostNames": [],
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/httpListeners/listener-http",
+      "name": "listener-http",
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "requireServerNameIndication": false,
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/httpListeners"
+    }
+  ],
+  "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev",
+  "listeners": [],
+  "loadDistributionPolicies": [],
+  "location": "westeurope",
+  "name": "agw-casp-dev",
+  "operationalState": "Running",
+  "privateEndpointConnections": [],
+  "privateLinkConfigurations": [],
+  "probes": [
+    {
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "host": "10.10.3.100",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/probes/probe-backend",
+      "interval": 30,
+      "match": {
+        "statusCodes": [
+          "200-399"
+        ]
+      },
+      "minServers": 0,
+      "name": "probe-backend",
+      "path": "/api/health",
+      "pickHostNameFromBackendHttpSettings": false,
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "timeout": 30,
+      "type": "Microsoft.Network/applicationGateways/probes",
+      "unhealthyThreshold": 3
+    },
+    {
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "host": "10.10.2.100",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/probes/probe-frontend",
+      "interval": 30,
+      "match": {
+        "statusCodes": [
+          "200-399"
+        ]
+      },
+      "minServers": 0,
+      "name": "probe-frontend",
+      "path": "/",
+      "pickHostNameFromBackendHttpSettings": false,
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "timeout": 30,
+      "type": "Microsoft.Network/applicationGateways/probes",
+      "unhealthyThreshold": 3
+    }
+  ],
+  "provisioningState": "Succeeded",
+  "redirectConfigurations": [],
+  "requestRoutingRules": [
+    {
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "httpListener": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/httpListeners/listener-http",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/requestRoutingRules/rule-main",
+      "name": "rule-main",
+      "priority": 100,
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "ruleType": "PathBasedRouting",
+      "type": "Microsoft.Network/applicationGateways/requestRoutingRules",
+      "urlPathMap": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/urlPathMaps/path-map-main",
+        "resourceGroup": "rg-casp-dev"
+      }
+    }
+  ],
+  "resourceGroup": "rg-casp-dev",
+  "resourceGuid": "e72bcad8-eb33-4e18-b256-c4ec91948697",
+  "rewriteRuleSets": [],
+  "routingRules": [],
+  "sku": {
+    "capacity": 1,
+    "family": "Generation_1",
+    "name": "WAF_v2",
+    "tier": "WAF_v2"
+  },
+  "sslCertificates": [],
+  "sslPolicy": {
+    "policyName": "AppGwSslPolicy20220101",
+    "policyType": "Predefined"
+  },
+  "sslProfiles": [],
+  "tags": {},
+  "trustedClientCertificates": [],
+  "trustedRootCertificates": [],
+  "type": "Microsoft.Network/applicationGateways",
+  "urlPathMaps": [
+    {
+      "defaultBackendAddressPool": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendAddressPools/pool-frontend-ilb",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "defaultBackendHttpSettings": {
+        "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendHttpSettingsCollection/settings-frontend-http",
+        "resourceGroup": "rg-casp-dev"
+      },
+      "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+      "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/urlPathMaps/path-map-main",
+      "name": "path-map-main",
+      "pathRules": [
+        {
+          "backendAddressPool": {
+            "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendAddressPools/pool-backend-ilb",
+            "resourceGroup": "rg-casp-dev"
+          },
+          "backendHttpSettings": {
+            "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/backendHttpSettingsCollection/settings-backend-http",
+            "resourceGroup": "rg-casp-dev"
+          },
+          "etag": "W/\"f8530b77-3d39-425d-81c4-36f8596282f4\"",
+          "id": "/subscriptions/5a775aa2-0a21-483c-9818-460896054c2e/resourceGroups/rg-casp-dev/providers/Microsoft.Network/applicationGateways/agw-casp-dev/urlPathMaps/path-map-main/pathRules/api-route",
+          "name": "api-route",
+          "paths": [
+            "/api/*"
+          ],
+          "provisioningState": "Succeeded",
+          "resourceGroup": "rg-casp-dev",
+          "type": "Microsoft.Network/applicationGateways/urlPathMaps/pathRules"
+        }
+      ],
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-casp-dev",
+      "type": "Microsoft.Network/applicationGateways/urlPathMaps"
+    }
+  ]
+}

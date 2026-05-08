@@ -1,0 +1,29 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars.backup
+
+# Node
+node_modules/
+dist/
+
+# Java
+target/
+
+# Env
+.env
+
+
+*.pfx
+
+# certificates / secrets
+*.pfx
+*.pem
+*.key
+*.crt
+*.p12
+.env
+terraform.tfvars
+.terraform/

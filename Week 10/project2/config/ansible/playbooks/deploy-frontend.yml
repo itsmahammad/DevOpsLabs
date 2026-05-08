@@ -1,0 +1,38 @@
+---
+- name: Deploy frontend
+  hosts: frontend
+  become: yes
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Clean old frontend files
+      file:
+        path: /var/www/html
+        state: absent
+
+    - name: Recreate html directory
+      file:
+        path: /var/www/html
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: "0755"
+
+    - name: Copy frontend build files
+      copy:
+        src: "{{ artifact_path }}/"
+        dest: /var/www/html/
+        owner: www-data
+        group: www-data
+        mode: "0644"
+
+    - name: Restart nginx
+      systemd:
+        name: nginx
+        state: restarted
+        enabled: yes

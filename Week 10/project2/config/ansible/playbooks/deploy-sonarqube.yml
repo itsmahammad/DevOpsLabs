@@ -1,0 +1,25 @@
+- name: Deploy SonarQube
+  hosts: ops
+  become: yes
+
+  tasks:
+    - name: Install docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Start docker
+      service:
+        name: docker
+        state: started
+        enabled: true
+
+    - name: Pull SonarQube image
+      docker_container:
+        name: sonarqube
+        image: sonarqube:community
+        state: started
+        restart_policy: always
+        ports:
+          - "9000:9000"

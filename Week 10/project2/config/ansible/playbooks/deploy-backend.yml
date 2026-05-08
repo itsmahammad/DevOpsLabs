@@ -1,0 +1,56 @@
+---
+- name: Deploy backend
+  hosts: backend
+  become: yes
+
+  tasks:
+    - name: Install Java 21
+      apt:
+        name: openjdk-21-jdk
+        state: present
+        update_cache: yes
+
+    - name: Create backend app directory
+      file:
+        path: /opt/casp-backend
+        state: directory
+        owner: azureuser
+        group: azureuser
+        mode: "0755"
+
+    - name: Copy backend jar
+      copy:
+        src: "{{ artifact_path }}"
+        dest: /opt/casp-backend/backend.jar
+        owner: azureuser
+        group: azureuser
+        mode: "0755"
+
+    - name: Create backend systemd service
+      copy:
+        dest: /etc/systemd/system/casp-backend.service
+        content: |
+          [Unit]
+          Description=CASP LinkGuardian Backend
+          After=network.target
+
+          [Service]
+          User=azureuser
+          WorkingDirectory=/opt/casp-backend
+          ExecStart=/usr/bin/java -jar /opt/casp-backend/backend.jar
+          Restart=always
+          RestartSec=5
+          Environment=SERVER_PORT=8080
+
+          [Install]
+          WantedBy=multi-user.target
+
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Restart backend service
+      systemd:
+        name: casp-backend
+        state: restarted
+        enabled: yes
