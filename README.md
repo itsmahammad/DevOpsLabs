@@ -32,6 +32,8 @@ Topics include:
 
 ## Technologies
 
+- Linux and Bash scripting
+- Networking
 - Azure
 - Docker
 - CI/CD 
@@ -41,6 +43,5 @@ Topics include:
 - Linux
 - Kubernetes
 - GitOps|ArgoCD
-- Bash
-- Kubernetes *(upcoming)*
-- Monitoring tools *(upcoming)*
+- Prometheus/Grafana
+
